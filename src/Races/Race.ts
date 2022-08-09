@@ -20,7 +20,7 @@ abstract class Race implements IRace {
     return this._dexterity;
   }
 
-  static get createdRacesInstances(): number {
+  static createdRacesInstances(): number | void {
     throw new Error('Not implemented');
   }
 
