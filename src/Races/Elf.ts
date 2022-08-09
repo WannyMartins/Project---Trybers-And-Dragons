@@ -1,0 +1,26 @@
+import Race from './Race';
+
+class Elf extends Race {
+  private _maxLifePoints: number;
+  static instanceCount = 0 ;
+
+  constructor(name: string, dexterity: number) {
+    super(name, dexterity);
+    this._maxLifePoints = 99;
+    Elf.newInstance();
+  }
+
+  get maxLifePoints(): number {
+    return this._maxLifePoints;
+  }
+
+  static newInstance(): void {
+    Elf.instanceCount += 1;
+  }
+
+  static createdRacesInstance(): number {
+    return Elf.instanceCount;
+  }
+}
+
+export default Elf;
