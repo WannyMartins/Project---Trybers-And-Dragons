@@ -12,7 +12,7 @@ class Mage extends Archetype {
   }
 
   static createdArchetypeInstances(): number {
-    return Mage.instanceCount;
+    return this.instanceCount;
   }
 
   get energyType(): EnergyType {
