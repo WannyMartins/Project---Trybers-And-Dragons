@@ -1,6 +1,4 @@
-import IRace from '../Interfaces/IRaces';
-
-abstract class Race implements IRace {
+abstract class Race {
   protected _name: string; 
   private _dexterity: number; 
 
